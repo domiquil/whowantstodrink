@@ -10,16 +10,22 @@
   display: block;
   margin: 0 auto;
 }
+    #draw-card {
+  display: block;
+  margin: 10px auto 0;
+}
   </style>
 </head>
 
 <body>
 
   <div id="card-container">
-  <img id="card-image" src=""> 
-</div>
 
+  <img id="card-image" src="">
+  
   <button id="draw-card">Draw Card</button>
+
+</div>
 
   <script>
     const cardImages = [
@@ -37,7 +43,7 @@
       img.src = randomImage;
     }
 const container = document.getElementById('card-container');
-container.style.position = 'absolute';
+container.style.position = 'relative';
 container.style.top = '50%';
 container.style.left = '50%';
 container.style.transform = 'translate(-50%, -50%)';
